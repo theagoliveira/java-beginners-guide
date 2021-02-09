@@ -1,6 +1,4 @@
-/**
- * ModDemo
- */
+// Demonstrate the % operator.
 public class ModDemo {
     public static void main(String[] args) {
         int iresult, irem;
