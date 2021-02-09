@@ -11,7 +11,7 @@ public class GalToLitTable {
         int counter;
 
         counter = 0;
-        for (gallons = 0; gallons <= 100; gallons++) {
+        for (gallons = 1; gallons <= 100; gallons++) {
             liters = gallons * 3.7854; // convert to liters
             System.out.println(gallons + " gallons is " + liters + " liters.");
 
