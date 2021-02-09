@@ -1,6 +1,4 @@
-/**
- * BoolDemo
- */
+// Demonstrate boolean values.
 public class BoolDemo {
     public static void main(String[] args) {
         boolean b;
