@@ -1,7 +1,4 @@
 // Demonstrate the short-circuit operators.
-/**
- * SCops
- */
 public class SCops {
     public static void main(String[] args) {
         int n, d, q;

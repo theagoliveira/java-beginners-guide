@@ -1,5 +1,7 @@
-/**
- * BlockDemo
+/*
+ * Demonstrate a block of code.
+ *
+ * Call this file BlockDemo.java.
  */
 public class BlockDemo {
     public static void main(String[] args) {

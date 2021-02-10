@@ -1,7 +1,4 @@
 // Side effects can be important.
-/**
- * SideEffects
- */
 public class SideEffects {
     public static void main(String[] args) {
         int i;

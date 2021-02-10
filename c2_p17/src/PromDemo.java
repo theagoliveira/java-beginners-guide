@@ -1,7 +1,4 @@
 // A promotion surprise!
-/**
- * PromDemo
- */
 public class PromDemo {
     public static void main(String[] args) {
         byte b;

@@ -1,7 +1,4 @@
 // Show square roots of 1 to 99 and the rounding error.
-/**
- * SqrRoot
- */
 public class SqrRoot {
     public static void main(String[] args) {
         double num, sroot, rerr;

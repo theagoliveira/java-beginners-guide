@@ -1,7 +1,4 @@
 // Using a cast.
-/**
- * UseCast
- */
 public class UseCast {
     public static void main(String[] args) {
         int i;

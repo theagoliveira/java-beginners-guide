@@ -1,9 +1,6 @@
 /*
  * 10. Write a program that finds all of the prime numbers between 2 and 100.
  */
-/**
- * Primes
- */
 public class Primes {
     public static void main(String[] args) {
         int i;
