@@ -1,7 +1,4 @@
 // Where you put a label is important.
-/**
- * Break6
- */
 public class Break6 {
     public static void main(String[] args) {
         int x = 0, y = 0;
