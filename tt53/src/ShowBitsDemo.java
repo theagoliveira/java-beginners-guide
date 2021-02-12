@@ -12,6 +12,7 @@ class ShowBits {
 
     void show(long val) {
         long mask = 1;
+        // var mask = 1L; // Chapter 5 Self Test 21
 
         // left-shift a 1 into the proper position
         mask <<= numbits - 1;

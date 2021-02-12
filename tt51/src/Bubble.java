@@ -1,4 +1,4 @@
-/**
+/*
  * Try This 5-1
  *
  * Demonstrate the Bubble sort.
@@ -35,5 +35,4 @@ class Bubble {
             System.out.print(" " + nums[i]);
         System.out.println();
     }
-
 }
