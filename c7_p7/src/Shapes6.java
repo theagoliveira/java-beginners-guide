@@ -14,7 +14,7 @@ class TwoDShape {
         height = h;
     }
 
-    // Constructo object with equal width and height
+    // Construct an object with equal width and height
     TwoDShape(double x) {
         width = height = x;
     }

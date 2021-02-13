@@ -1,6 +1,4 @@
-// A simple class hierarchy.
-
-// A class for two-dimensional objects.
+// A multilevel hierarchy.
 class TwoDShape {
     private double width; // these are
     private double height; // now private
@@ -19,6 +17,12 @@ class TwoDShape {
     // Construct an object with equal width and height
     TwoDShape(double x) {
         width = height = x;
+    }
+
+    // Construct an object from an object.
+    TwoDShape(TwoDShape ob) {
+        width = ob.width;
+        height = ob.height;
     }
 
     // Accessor methods for width and height.
@@ -44,7 +48,7 @@ class TwoDShape {
 }
 
 
-// A subclass of TwoDShape for triangles
+// Extend TwoDShape
 class Triangle extends TwoDShape {
     private String style;
 
@@ -54,7 +58,7 @@ class Triangle extends TwoDShape {
         style = "none";
     }
 
-    // Constructor
+    // Constructor for Triangle.
     Triangle(String s, double w, double h) {
         super(w, h); // call superclass constructor
         style = s;
@@ -64,6 +68,12 @@ class Triangle extends TwoDShape {
     Triangle(double x) {
         super(x); // call superclass constructor
         style = "filled";
+    }
+
+    // Construct an object from an object.
+    Triangle(Triangle ob) {
+        super(ob); // pass object to TwoDShape constructor
+        style = ob.style;
     }
 
     double area() {
@@ -76,11 +86,12 @@ class Triangle extends TwoDShape {
 }
 
 
-class Shapes5 {
+class Shapes7 {
     public static void main(String[] args) {
-        var t1 = new Triangle();
-        var t2 = new Triangle("outlined", 8.0, 12.0);
-        var t3 = new Triangle(4.0);
+        var t1 = new Triangle("outlined", 8.0, 12.0);
+
+        // make a copy of t1
+        var t2 = new Triangle(t1);
 
         System.out.println("Info for t1: ");
         t1.showStyle();
@@ -93,12 +104,5 @@ class Shapes5 {
         t2.showStyle();
         t2.showDim();
         System.out.println("Area is " + t2.area());
-
-        System.out.println();
-
-        System.out.println("Info for t3: ");
-        t3.showStyle();
-        t3.showDim();
-        System.out.println("Area is " + t3.area());
     }
 }
