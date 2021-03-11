@@ -40,7 +40,7 @@ public class TFDemo implements ActionListener {
         jlabPrompt = new JLabel("Enter text: ");
         jlabContents = new JLabel("");
 
-        // Add the componentes to the content pane.
+        // Add the components to the content pane.
         jfrm.add(jlabPrompt);
         jfrm.add(jtf);
         jfrm.add(jbtnRev);

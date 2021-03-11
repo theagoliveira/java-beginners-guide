@@ -13,7 +13,7 @@ public class CBDemo implements ItemListener {
 
     CBDemo() {
         // Create a new JFrame container.
-        var jfrm = new JFrame("Use a Text Field");
+        var jfrm = new JFrame("Demonstrate Check Boxes");
 
         // Specify FlowLayout for the layout manager.
         jfrm.setLayout(new FlowLayout());
@@ -38,7 +38,7 @@ public class CBDemo implements ItemListener {
         jcbBeta.addItemListener(this);
         jcbGamma.addItemListener(this);
 
-        // Add the componentes to the content pane.
+        // Add the components to the content pane.
         jfrm.add(jcbAlpha);
         jfrm.add(jcbBeta);
         jfrm.add(jcbGamma);
